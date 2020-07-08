@@ -1,0 +1,55 @@
+header {
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 6px;
+    text-decoration: none;
+}
+
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 8px;
+}
+
+body {
+    color: #333333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 5px;    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.portrait {
+    width: 400px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 2px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 2px;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: #888888;
+    border-top: 2px solid #eeeeee;
+    margin-top: 6px;
+    padding: 6px 0;
+}
