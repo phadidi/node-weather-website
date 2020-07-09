@@ -16,7 +16,9 @@ weatherForm.addEventListener('submit', (e) => {
             weatherGeocode.textContent = data.error
         } else {
             weatherGeocode.textContent = data.location
-            weatherForecast.textContent = 'The current temperature is ' + data.forecast.current + ' degrees Farenheit. It feels like ' + data.forecast.feelslike + ' degrees Farenheit. There is a ' + data.forecast.precip + ' percent chance of rain.'
+            weatherForecast.textContent = 'The current temperature is ' + data.forecast.current + ' degrees Farenheit. It feels like '
+             + data.forecast.feelslike + ' degrees Farenheit. There is a ' + data.forecast.precip + ' percent chance of rain.\n' +
+             'The wind is blowing at ' + data.forecast.wind_speed + ' mph and the current humidity is ' + data.forecast.humidity + ' percent.'
         }
     })
 })
