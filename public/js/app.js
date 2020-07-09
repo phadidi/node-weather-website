@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     weatherGeocode.textContent = 'Loading results...'
     weatherForecast.textContent = ''
-    fetch('http://localhost:3000/weather?address=' + address.value).then((response) => {
+    fetch('/weather?address=' + address.value).then((response) => {
     response.json().then((data) => {
         if (data.error) {
             weatherGeocode.textContent = data.error

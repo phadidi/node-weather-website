@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+const port = process.env.PORT || 3999
 
 // Paths for Express cpmfog
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -91,6 +92,6 @@ app.get('*', (req, res) => { // This check uses a wild card character to occur f
     })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is up on port 3000.')
 })
